@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Comment.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">backend</a> &gt; <a href="index.source.html" class="el_package">com.iliani14.pg5100.entities</a> &gt; <span class="el_source">Comment.java</span></div><h1>Comment.java</h1><pre class="source lang-java linenums">package com.iliani14.pg5100.entities;
+
+
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * Created by anitailieva on 05/09/16.
+ */
+@Entity
+public class Comment {
+
+
+    @Id
+    @GeneratedValue
+    private long id;
+
+    @NotNull
+    @Size(min = 2, max = 3000)
+    private String content;
+
+    @ManyToOne
+    private User author;
+
+
+    @Past
+    @Temporal(TemporalType.DATE)
+    private Date creationDate;
+
+    @OneToMany(fetch = FetchType.EAGER)
+    @Fetch(value = FetchMode.SUBSELECT)
+    private List&lt;Comment&gt; comments;
+
+    private int upVotes;
+    private int downVotes;
+
+<span class="fc" id="L45">    public Comment() {</span>
+<span class="fc" id="L46">    }</span>
+
+    public long getId() {
+<span class="fc" id="L49">        return id;</span>
+    }
+
+    public void setId(long id) {
+<span class="nc" id="L53">        this.id = id;</span>
+<span class="nc" id="L54">    }</span>
+
+    public int getUpVotes() {
+<span class="nc" id="L57">        return upVotes;</span>
+    }
+
+    public void setUpVotes(int upVotes) {
+<span class="nc" id="L61">        this.upVotes = upVotes;</span>
+<span class="nc" id="L62">    }</span>
+
+    public int getDownVotes() {
+<span class="nc" id="L65">        return downVotes;</span>
+    }
+
+    public void setDownVotes(int downVotes) {
+<span class="nc" id="L69">        this.downVotes = downVotes;</span>
+<span class="nc" id="L70">    }</span>
+
+    public String getContent() {
+<span class="nc" id="L73">        return content;</span>
+    }
+
+    public void setContent(String content) {
+<span class="fc" id="L77">        this.content = content;</span>
+<span class="fc" id="L78">    }</span>
+
+    public Date getCreationDate() {
+<span class="nc" id="L81">        return creationDate;</span>
+    }
+
+    public void setCreationDate(Date creationDate) {
+<span class="fc" id="L85">        this.creationDate = creationDate;</span>
+<span class="fc" id="L86">    }</span>
+
+    public List&lt;Comment&gt; getComments() {
+<span class="pc bpc" id="L89" title="1 of 2 branches missed.">        if (comments == null) {</span>
+<span class="nc" id="L90">            comments = new ArrayList&lt;&gt;();</span>
+        }
+<span class="fc" id="L92">        return comments;</span>
+    }
+
+    public void setComments(List&lt;Comment&gt; comments) {
+<span class="nc" id="L96">        this.comments = comments;</span>
+<span class="nc" id="L97">    }</span>
+
+    public User getAuthor() {
+<span class="nc" id="L100">        return author;</span>
+    }
+
+    public void setAuthor(User author) {
+<span class="nc" id="L104">        this.author = author;</span>
+<span class="nc" id="L105">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
