@@ -20,6 +20,7 @@ import javax.ejb.EJB;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -122,15 +123,49 @@ public class UserEJBTest {
         @Test
         public void testGetAllCountries(){
             user.createNewUser("u1", "password1","aaa", "bbb", "aaa@live.com", Countries.Bulgaria);
-            user.createNewUser("u2", "password2","name", "lastname", "name@gmail.com", Countries.Australia);
+            user.createNewUser("u2", "password2","name", "lastname", "name@gmail.com", Countries.Bulgaria);
             user.createNewUser("u3", "password3","fornavn", "etternavn", "fornavn@live.no", Countries.Norway);
 
             List<Countries> co = user.getCountries();
 
-            assertEquals(3, co.size());
+            assertEquals(2, co.size());
 
         }
 
+        @Test
+        public void testUsersFromCountry(){
+            user.createNewUser("u1", "password1","aaa", "bbb", "aaa@live.com", Countries.Bulgaria);
+            user.createNewUser("u2", "password2","name", "lastname", "name@gmail.com", Countries.Bulgaria);
+            user.createNewUser("u3", "password3","fornavn", "etternavn", "fornavn@live.no", Countries.Norway);
+
+            assertEquals(2, user.usersFromCountry(Countries.Bulgaria));
+        }
+
+        @Test
+        public void testAddVoteToPost(){
+            User u = user.createNewUser("u1", "password1", "aaa", "bbb", "aaa@live.com", Countries.Bulgaria);
+            Post p = post.createNewPost(u, "Title", "Some text");
+            post.addVoteToPost(p.getId(), 1);
+            assertEquals(1, post.findPostById(p.getId()).getUpVotes());
+
+        }
+
+        @Test
+        public void testAddVoteToComment(){
+            User u = user.createNewUser("u1", "password1", "aaa", "bbb", "aaa@live.com", Countries.Bulgaria);
+            Post p = post.createNewPost(u, "Title", "Some text");
+
+            Comment c = comment.createNewComment(u, p, "Comment text");
+            comment.addVoteToComment(c.getId(), 1);
+
+            assertEquals(1, comment.findCommentById(c.getId()).getUpVotes());
+        }
+
+        @Test
+        public void testGetUser() {
+            User u = user.createNewUser("u1", "password1", "aaa", "bbb", "aaa@live.com", Countries.Bulgaria);
+            assertNotNull(u.getUserId());
+        }
 
 
     }
