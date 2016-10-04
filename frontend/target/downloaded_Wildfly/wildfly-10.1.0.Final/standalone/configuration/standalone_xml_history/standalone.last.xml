@@ -417,7 +417,7 @@
 
     <deployments>
         <deployment name="frontend-1.0-SNAPSHOT.war" runtime-name="frontend-1.0-SNAPSHOT.war">
-            <content sha1="0a01b84427d37318e3c578b1f0f18f96cb166eff"/>
+            <content sha1="7306a765af718c6a12caaeb539834a8de39323ce"/>
         </deployment>
     </deployments>
 </server>

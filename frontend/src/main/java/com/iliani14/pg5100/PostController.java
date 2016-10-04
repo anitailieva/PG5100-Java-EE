@@ -32,15 +32,15 @@ public class PostController implements Serializable {
         }
         return "home.jsf";
     }
-    public List<Post> getAllPosts(){
-        return postEJB.getAllPosts();
-    }
 
     public String deletePost(long id){
         postEJB.deletePost(id);
         return "home.jsf";
     }
 
+    public List<Post> getAllPosts(){
+        return postEJB.getAllPosts();
+    }
     public String getFormTitle() {
         return formTitle;
     }
@@ -56,8 +56,6 @@ public class PostController implements Serializable {
     public void setFormText(String formText) {
         this.formText = formText;
     }
-
-
 
 
 }

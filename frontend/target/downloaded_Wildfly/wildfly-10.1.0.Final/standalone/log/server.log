@@ -1,7 +1,7 @@
-2016-10-04 20:52:18,011 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
-2016-10-04 20:52:23,346 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
-2016-10-04 20:52:23,589 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
-2016-10-04 20:52:23,591 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+2016-10-05 00:41:27,474 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2016-10-05 00:41:32,858 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-10-05 00:41:33,071 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2016-10-05 00:41:33,073 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
 	[Standalone] = 
 	awt.toolkit = sun.lwawt.macosx.LWCToolkit
 	file.encoding = UTF-8
@@ -89,60 +89,60 @@
 	user.language = en
 	user.name = anitailieva
 	user.timezone = Europe/Oslo
-2016-10-04 20:52:23,592 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -javaagent:/Users/anitailieva/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/jacoco-it.exec -Dorg.jboss.boot.log.file=/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/configuration/logging.properties 
-2016-10-04 20:52:25,945 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
-2016-10-04 20:52:25,977 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.4.0.Final
-2016-10-04 20:52:25,992 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.4.0.Final
-2016-10-04 20:52:26,142 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
-2016-10-04 20:52:26,142 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
-2016-10-04 20:52:26,143 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.21.Final
-2016-10-04 20:52:26,219 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
-2016-10-04 20:52:26,223 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
-2016-10-04 20:52:26,240 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=4.9.6.Final
-2016-10-04 20:52:26,241 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
-2016-10-04 20:52:26,239 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
-2016-10-04 20:52:26,276 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
-2016-10-04 20:52:26,276 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
-2016-10-04 20:52:26,295 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
-2016-10-04 20:52:26,298 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
-2016-10-04 20:52:26,329 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.4.0.Final starting
-2016-10-04 20:52:26,323 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
-2016-10-04 20:52:26,336 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
-2016-10-04 20:52:26,551 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
-2016-10-04 20:52:26,585 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
-2016-10-04 20:52:26,586 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
-2016-10-04 20:52:26,818 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
-2016-10-04 20:52:26,822 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
-2016-10-04 20:52:26,827 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
-2016-10-04 20:52:27,349 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
-2016-10-04 20:52:27,404 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/deployments
-2016-10-04 20:52:27,685 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
-2016-10-04 20:52:27,731 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:27,739 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:27,733 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:27,741 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:27,747 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:28,150 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:28,174 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
-2016-10-04 20:52:28,406 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
-2016-10-04 20:52:32,144 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
-2016-10-04 20:52:32,381 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2016-10-04 20:52:32,390 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
-2016-10-04 20:52:32,391 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 15006ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
-2016-10-04 20:52:32,527 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0001: Content added at location /Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/data/content/0a/01b84427d37318e3c578b1f0f18f96cb166eff/content
-2016-10-04 20:52:32,567 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "frontend-1.0-SNAPSHOT.war" (runtime-name: "frontend-1.0-SNAPSHOT.war")
-2016-10-04 20:52:33,327 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for DB
-2016-10-04 20:52:33,458 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 58) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
-2016-10-04 20:52:33,499 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 58) HHH000204: Processing PersistenceUnitInfo [
+2016-10-05 00:41:33,075 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -javaagent:/Users/anitailieva/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/jacoco-it.exec -Dorg.jboss.boot.log.file=/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/configuration/logging.properties 
+2016-10-05 00:41:35,429 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-10-05 00:41:35,475 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.4.0.Final
+2016-10-05 00:41:35,491 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.4.0.Final
+2016-10-05 00:41:35,577 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-10-05 00:41:35,596 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-10-05 00:41:35,602 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-10-05 00:41:35,608 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 4.0.21.Final
+2016-10-05 00:41:35,622 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-10-05 00:41:35,623 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-10-05 00:41:35,642 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-10-05 00:41:35,646 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2016-10-05 00:41:35,654 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-10-05 00:41:35,681 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2016-10-05 00:41:35,761 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2016-10-05 00:41:35,790 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-10-05 00:41:35,797 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-10-05 00:41:35,810 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2016-10-05 00:41:35,810 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-10-05 00:41:36,096 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-10-05 00:41:36,110 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2016-10-05 00:41:36,112 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2016-10-05 00:41:36,307 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2016-10-05 00:41:36,325 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-10-05 00:41:36,325 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-10-05 00:41:36,678 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2016-10-05 00:41:36,720 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/deployments
+2016-10-05 00:41:36,855 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2016-10-05 00:41:37,252 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2016-10-05 00:41:37,285 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:37,285 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:37,286 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:37,287 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:37,287 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:37,287 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:37,376 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2016-10-05 00:41:41,527 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-10-05 00:41:41,784 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-10-05 00:41:41,785 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-10-05 00:41:41,785 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 14956ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
+2016-10-05 00:41:42,010 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0001: Content added at location /Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/data/content/73/06a765af718c6a12caaeb539834a8de39323ce/content
+2016-10-05 00:41:42,056 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "frontend-1.0-SNAPSHOT.war" (runtime-name: "frontend-1.0-SNAPSHOT.war")
+2016-10-05 00:41:42,671 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for DB
+2016-10-05 00:41:42,787 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 60) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
+2016-10-05 00:41:42,829 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 60) HHH000204: Processing PersistenceUnitInfo [
 	name: DB
 	...]
-2016-10-04 20:52:33,592 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment frontend-1.0-SNAPSHOT.war
-2016-10-04 20:52:33,691 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 58) HHH000412: Hibernate Core {5.0.10.Final}
-2016-10-04 20:52:33,694 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 58) HHH000206: hibernate.properties not found
-2016-10-04 20:52:33,697 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 58) HHH000021: Bytecode provider name : javassist
-2016-10-04 20:52:33,743 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.2.4.Final
-2016-10-04 20:52:33,801 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 58) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2016-10-04 20:52:33,992 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'UserEJB' in deployment unit 'deployment "frontend-1.0-SNAPSHOT.war"' are as follows:
+2016-10-05 00:41:42,909 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment frontend-1.0-SNAPSHOT.war
+2016-10-05 00:41:42,978 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 60) HHH000412: Hibernate Core {5.0.10.Final}
+2016-10-05 00:41:42,980 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 60) HHH000206: hibernate.properties not found
+2016-10-05 00:41:42,988 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 60) HHH000021: Bytecode provider name : javassist
+2016-10-05 00:41:43,067 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.2.4.Final
+2016-10-05 00:41:43,072 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 60) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-10-05 00:41:43,337 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'UserEJB' in deployment unit 'deployment "frontend-1.0-SNAPSHOT.war"' are as follows:
 
 	java:global/frontend-1.0-SNAPSHOT/UserEJB!com.iliani14.pg5100.services.UserEJB
 	java:app/frontend-1.0-SNAPSHOT/UserEJB!com.iliani14.pg5100.services.UserEJB
@@ -151,7 +151,7 @@
 	java:app/frontend-1.0-SNAPSHOT/UserEJB
 	java:module/UserEJB
 
-2016-10-04 20:52:33,994 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'CommentEJB' in deployment unit 'deployment "frontend-1.0-SNAPSHOT.war"' are as follows:
+2016-10-05 00:41:43,337 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'CommentEJB' in deployment unit 'deployment "frontend-1.0-SNAPSHOT.war"' are as follows:
 
 	java:global/frontend-1.0-SNAPSHOT/CommentEJB!com.iliani14.pg5100.services.CommentEJB
 	java:app/frontend-1.0-SNAPSHOT/CommentEJB!com.iliani14.pg5100.services.CommentEJB
@@ -160,7 +160,7 @@
 	java:app/frontend-1.0-SNAPSHOT/CommentEJB
 	java:module/CommentEJB
 
-2016-10-04 20:52:33,994 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PostEJB' in deployment unit 'deployment "frontend-1.0-SNAPSHOT.war"' are as follows:
+2016-10-05 00:41:43,338 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PostEJB' in deployment unit 'deployment "frontend-1.0-SNAPSHOT.war"' are as follows:
 
 	java:global/frontend-1.0-SNAPSHOT/PostEJB!com.iliani14.pg5100.services.PostEJB
 	java:app/frontend-1.0-SNAPSHOT/PostEJB!com.iliani14.pg5100.services.PostEJB
@@ -169,662 +169,102 @@
 	java:app/frontend-1.0-SNAPSHOT/PostEJB
 	java:module/PostEJB
 
-2016-10-04 20:52:34,429 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:34,430 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
-2016-10-04 20:52:34,646 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 2.3.5 (Final)
-2016-10-04 20:52:35,077 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 13) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
-2016-10-04 20:52:35,271 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 58) WFLYCLINF0002: Started client-mappings cache from ejb container
-2016-10-04 20:52:35,688 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 13) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2016-10-04 20:52:35,708 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 13) HHH000431: Unable to determine H2 database version, certain features may not work
-2016-10-04 20:52:35,837 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 13) Envers integration enabled? : true
-2016-10-04 20:52:37,065 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 13) HHH000227: Running hbm2ddl schema export
-2016-10-04 20:52:37,254 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table Comment if exists
-2016-10-04 20:52:37,255 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table Comment_Comment if exists
-2016-10-04 20:52:37,255 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table Post if exists
-2016-10-04 20:52:37,256 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table Post_Comment if exists
-2016-10-04 20:52:37,256 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table User if exists
-2016-10-04 20:52:37,257 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table User_Comment if exists
-2016-10-04 20:52:37,257 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop table User_Post if exists
-2016-10-04 20:52:37,257 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: drop sequence if exists hibernate_sequence
-2016-10-04 20:52:37,258 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create sequence hibernate_sequence start with 1 increment by 1
-2016-10-04 20:52:37,260 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table Comment (id bigint not null, content varchar(3000) not null, creationDate date, downVotes integer not null, upVotes integer not null, author_id bigint, primary key (id))
-2016-10-04 20:52:37,262 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table Comment_Comment (Comment_id bigint not null, comments_id bigint not null)
-2016-10-04 20:52:37,262 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table Post (id bigint not null, content varchar(3000) not null, creationDate timestamp not null, downVotes integer not null, title varchar(130), upVotes integer not null, author_id bigint, primary key (id))
-2016-10-04 20:52:37,263 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table Post_Comment (Post_id bigint not null, comments_id bigint not null)
-2016-10-04 20:52:37,264 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table User (id bigint not null, address varchar(120), city varchar(120), country varchar(255), email varchar(255) not null, firstName varchar(120) not null, hash varchar(255) not null, lastName varchar(120) not null, salt varchar(26) not null, userId varchar(30) not null, primary key (id))
-2016-10-04 20:52:37,267 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table User_Comment (User_id bigint not null, comments_id bigint not null)
-2016-10-04 20:52:37,267 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: create table User_Post (User_id bigint not null, posts_id bigint not null)
-2016-10-04 20:52:37,268 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Comment_Comment add constraint UK_emjm85iut3gg2424j4ca655wo unique (comments_id)
-2016-10-04 20:52:37,268 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Post_Comment add constraint UK_5nd2ucnctmvwq31ovab2vi00x unique (comments_id)
-2016-10-04 20:52:37,269 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table User_Comment add constraint UK_ah9x95me6onvo198wl0s87lji unique (comments_id)
-2016-10-04 20:52:37,271 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table User_Post add constraint UK_sh5m62anjiodj8l9whe7oofbo unique (posts_id)
-2016-10-04 20:52:37,271 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Comment add constraint FKmve6jmvinowvmroe9om9bake1 foreign key (author_id) references User
-2016-10-04 20:52:37,279 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Comment_Comment add constraint FKjhw6e7sd1w2ptfru6bmuivlrb foreign key (comments_id) references Comment
-2016-10-04 20:52:37,280 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Comment_Comment add constraint FKo51r3kf9u24e8gsktybwog66s foreign key (Comment_id) references Comment
-2016-10-04 20:52:37,283 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Post add constraint FKn7gx6xx1edujxkuk0dcan2df0 foreign key (author_id) references User
-2016-10-04 20:52:37,285 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Post_Comment add constraint FK1yqm25y6mj9vmmxj4ev7aj2q1 foreign key (comments_id) references Comment
-2016-10-04 20:52:37,287 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table Post_Comment add constraint FKgtvmchqpjf5ysbhyg52cofvrn foreign key (Post_id) references Post
-2016-10-04 20:52:37,288 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table User_Comment add constraint FKrxs5nkgg2aaov9407wh1ifglp foreign key (comments_id) references Comment
-2016-10-04 20:52:37,292 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table User_Comment add constraint FKjhm6lfj7c3j3nfuqmflfogiki foreign key (User_id) references User
-2016-10-04 20:52:37,294 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table User_Post add constraint FKtp83m6v0ngia62i45nob705ax foreign key (posts_id) references Post
-2016-10-04 20:52:37,297 INFO  [stdout] (ServerService Thread Pool -- 13) Hibernate: alter table User_Post add constraint FK1bvlqf6qygpqqk6k7odi51jfg foreign key (User_id) references User
-2016-10-04 20:52:37,300 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 13) HHH000230: Schema export complete
-2016-10-04 20:52:37,309 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 13) HHH000397: Using ASTQueryTranslatorFactory
-2016-10-04 20:52:37,566 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 13) HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
-2016-10-04 20:52:37,573 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 13) HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
-2016-10-04 20:52:37,581 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 13) HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
-2016-10-04 20:52:39,279 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 3) Initializing Mojarra 2.2.13.SP1 20160303-1204 for context '/reddit'
-2016-10-04 20:52:40,207 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 3) Monitoring file:/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/tmp/vfs/temp/temp46c91c554ca638fc/content-c23f137b477abc8d/WEB-INF/faces-config.xml for modifications
-2016-10-04 20:52:40,299 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 3) WFLYUT0021: Registered web context: /reddit
-2016-10-04 20:52:40,382 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0010: Deployed "frontend-1.0-SNAPSHOT.war" (runtime-name : "frontend-1.0-SNAPSHOT.war")
-2016-10-04 20:55:11,062 INFO  [stdout] (default task-3) Hibernate: call next value for hibernate_sequence
-2016-10-04 20:55:11,175 INFO  [stdout] (default task-3) Hibernate: insert into User (address, city, country, email, firstName, hash, lastName, salt, userId, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2016-10-04 20:55:11,263 INFO  [stdout] (default task-3) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
-2016-10-04 20:55:11,282 INFO  [stdout] (default task-3) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
-2016-10-04 20:55:14,485 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
-2016-10-04 20:55:14,490 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
-2016-10-04 20:55:14,533 ERROR [org.jboss.as.ejb3.invocation] (default task-4) WFLYEJB0034: EJB Invocation failed on component PostEJB for method public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String): javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:187)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:277)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:327)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
-	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:636)
-	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
-	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
-	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
-	at com.iliani14.pg5100.services.PostEJB$$$view3.createNewPost(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:433)
-	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
-	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
-	at org.jboss.weld.bean.proxy.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:67)
-	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
-	at com.iliani14.pg5100.services.PostEJB$Proxy$_$$_Weld$EnterpriseProxy$.createNewPost(Unknown Source)
-	at com.iliani14.pg5100.PostController.doPostText(PostController.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at javax.el.ELUtil.invokeMethod(ELUtil.java:300)
-	at javax.el.BeanELResolver.invoke(BeanELResolver.java:415)
-	at javax.el.CompositeELResolver.invoke(CompositeELResolver.java:256)
-	at com.sun.el.parser.AstValue.invoke(AstValue.java:285)
-	at com.sun.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:304)
-	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
-	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
-	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
-	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
-	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
-	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
-	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
-	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
-	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
-	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
-	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
-	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
-	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
-	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
-	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor.validateMethodInvocation(ValidationInterceptor.java:73)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:74)
-	at org.jboss.weld.interceptor.proxy.WeldInvocationContext.invokeNext(WeldInvocationContext.java:83)
-	at org.jboss.weld.interceptor.proxy.WeldInvocationContext.proceed(WeldInvocationContext.java:115)
-	at org.jboss.weld.bean.InterceptorImpl.intercept(InterceptorImpl.java:108)
-	at org.jboss.as.weld.ejb.DelegatingInterceptorInvocationContext.proceed(DelegatingInterceptorInvocationContext.java:77)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:68)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:80)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93)
-	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
-	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)
-	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
-	... 107 more
-
-2016-10-04 20:55:14,539 WARNING [javax.enterprise.resource.webcontainer.jsf.lifecycle] (default task-4) #{postController.doPostText(userController.registeredUser)}: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[]): javax.faces.FacesException: #{postController.doPostText(userController.registeredUser)}: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
-	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
-	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
-	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
-	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
-	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
-	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
-	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
-	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.faces.el.EvaluationException: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
-	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
-	... 45 more
-Caused by: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:187)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:277)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:327)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
-	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:636)
-	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
-	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
-	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
-	at com.iliani14.pg5100.services.PostEJB$$$view3.createNewPost(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:433)
-	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
-	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
-	at org.jboss.weld.bean.proxy.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:67)
-	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
-	at com.iliani14.pg5100.services.PostEJB$Proxy$_$$_Weld$EnterpriseProxy$.createNewPost(Unknown Source)
-	at com.iliani14.pg5100.PostController.doPostText(PostController.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at javax.el.ELUtil.invokeMethod(ELUtil.java:300)
-	at javax.el.BeanELResolver.invoke(BeanELResolver.java:415)
-	at javax.el.CompositeELResolver.invoke(CompositeELResolver.java:256)
-	at com.sun.el.parser.AstValue.invoke(AstValue.java:285)
-	at com.sun.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:304)
-	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
-	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
-	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
-	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
-	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
-	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
-	... 46 more
-Caused by: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor.validateMethodInvocation(ValidationInterceptor.java:73)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:74)
-	at org.jboss.weld.interceptor.proxy.WeldInvocationContext.invokeNext(WeldInvocationContext.java:83)
-	at org.jboss.weld.interceptor.proxy.WeldInvocationContext.proceed(WeldInvocationContext.java:115)
-	at org.jboss.weld.bean.InterceptorImpl.intercept(InterceptorImpl.java:108)
-	at org.jboss.as.weld.ejb.DelegatingInterceptorInvocationContext.proceed(DelegatingInterceptorInvocationContext.java:77)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:68)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:80)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93)
-	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
-	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)
-	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
-	... 107 more
-
-2016-10-04 20:55:14,598 FATAL [javax.enterprise.resource.webcontainer.jsf.context] (default task-4) JSF1073: javax.faces.FacesException caught during processing of INVOKE_APPLICATION 5 : UIComponent-ClientId=, Message=#{postController.doPostText(userController.registeredUser)}: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-2016-10-04 20:55:14,599 FATAL [javax.enterprise.resource.webcontainer.jsf.context] (default task-4) #{postController.doPostText(userController.registeredUser)}: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[]): javax.faces.FacesException: #{postController.doPostText(userController.registeredUser)}: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:89)
-	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
-	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
-	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
-	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: javax.faces.FacesException: #{postController.doPostText(userController.registeredUser)}: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:118)
-	at javax.faces.component.UICommand.broadcast(UICommand.java:315)
-	at javax.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:790)
-	at javax.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1282)
-	at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:81)
-	... 41 more
-Caused by: javax.faces.el.EvaluationException: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:101)
-	at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:102)
-	... 45 more
-Caused by: javax.ejb.EJBException: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:187)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:277)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:327)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
-	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:636)
-	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
-	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
-	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
-	at com.iliani14.pg5100.services.PostEJB$$$view3.createNewPost(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:433)
-	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
-	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
-	at org.jboss.weld.bean.proxy.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:67)
-	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
-	at com.iliani14.pg5100.services.PostEJB$Proxy$_$$_Weld$EnterpriseProxy$.createNewPost(Unknown Source)
-	at com.iliani14.pg5100.PostController.doPostText(PostController.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at javax.el.ELUtil.invokeMethod(ELUtil.java:300)
-	at javax.el.BeanELResolver.invoke(BeanELResolver.java:415)
-	at javax.el.CompositeELResolver.invoke(CompositeELResolver.java:256)
-	at com.sun.el.parser.AstValue.invoke(AstValue.java:285)
-	at com.sun.el.MethodExpressionImpl.invoke(MethodExpressionImpl.java:304)
-	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
-	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
-	at org.jboss.weld.util.el.ForwardingMethodExpression.invoke(ForwardingMethodExpression.java:40)
-	at org.jboss.weld.el.WeldMethodExpression.invoke(WeldMethodExpression.java:50)
-	at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:105)
-	at javax.faces.component.MethodBindingMethodExpressionAdapter.invoke(MethodBindingMethodExpressionAdapter.java:87)
-	... 46 more
-Caused by: javax.validation.ConstraintViolationException: 1 constraint violation(s) occurred during method validation.
-Constructor or Method: public com.iliani14.pg5100.entities.Post com.iliani14.pg5100.services.PostEJB.createNewPost(com.iliani14.pg5100.entities.User,java.lang.String,java.lang.String)
-Argument values: [com.iliani14.pg5100.entities.User@469bf1f9, null, hi]
-Constraint violations: 
- (1) Kind: PARAMETER
- parameter index: 1
- message: may not be null
- root bean: com.iliani14.pg5100.services.PostEJB@2ee310ca
- property path: createNewPost.arg1
- constraint: @javax.validation.constraints.NotNull(message={javax.validation.constraints.NotNull.message}, groups=[], payload=[])
-	at org.hibernate.validator.internal.cdi.interceptor.ValidationInterceptor.validateMethodInvocation(ValidationInterceptor.java:73)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:74)
-	at org.jboss.weld.interceptor.proxy.WeldInvocationContext.invokeNext(WeldInvocationContext.java:83)
-	at org.jboss.weld.interceptor.proxy.WeldInvocationContext.proceed(WeldInvocationContext.java:115)
-	at org.jboss.weld.bean.InterceptorImpl.intercept(InterceptorImpl.java:108)
-	at org.jboss.as.weld.ejb.DelegatingInterceptorInvocationContext.proceed(DelegatingInterceptorInvocationContext.java:77)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.delegateInterception(Jsr299BindingsInterceptor.java:68)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:80)
-	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93)
-	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
-	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)
-	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
-	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
-	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
-	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
-	... 107 more
-
-2016-10-04 22:08:28,175 INFO  [org.jboss.as.server] (Thread-3) WFLYSRV0220: Server shutdown has been requested via an OS signal
-2016-10-04 22:08:28,199 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0022: Unregistered web context: /reddit
-2016-10-04 22:08:28,241 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
-2016-10-04 22:08:28,268 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 71) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
-2016-10-04 22:08:28,269 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 71) HHH000227: Running hbm2ddl schema export
-2016-10-04 22:08:28,285 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table Comment if exists
-2016-10-04 22:08:28,291 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table Comment_Comment if exists
-2016-10-04 22:08:28,292 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table Post if exists
-2016-10-04 22:08:28,292 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 70) WFLYCLINF0003: Stopped client-mappings cache from ejb container
-2016-10-04 22:08:28,294 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table Post_Comment if exists
-2016-10-04 22:08:28,295 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table User if exists
-2016-10-04 22:08:28,297 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table User_Comment if exists
-2016-10-04 22:08:28,299 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop table User_Post if exists
-2016-10-04 22:08:28,300 INFO  [stdout] (ServerService Thread Pool -- 71) Hibernate: drop sequence if exists hibernate_sequence
-2016-10-04 22:08:28,300 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 71) HHH000230: Schema export complete
-2016-10-04 22:08:28,306 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 71) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
-2016-10-04 22:08:28,307 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
-2016-10-04 22:08:28,315 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
-2016-10-04 22:08:28,317 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
-2016-10-04 22:08:28,317 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
-2016-10-04 22:08:28,318 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
-2016-10-04 22:08:28,318 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
-2016-10-04 22:08:28,320 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.0.Final stopping
-2016-10-04 22:08:28,327 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment frontend-1.0-SNAPSHOT.war (runtime-name: frontend-1.0-SNAPSHOT.war) in 145ms
-2016-10-04 22:08:28,334 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 139ms
+2016-10-05 00:41:43,655 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:43,656 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-10-05 00:41:43,825 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 2.3.5 (Final)
+2016-10-05 00:41:44,193 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 2) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
+2016-10-05 00:41:44,377 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 60) WFLYCLINF0002: Started client-mappings cache from ejb container
+2016-10-05 00:41:44,650 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 2) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-10-05 00:41:44,660 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 2) HHH000431: Unable to determine H2 database version, certain features may not work
+2016-10-05 00:41:44,729 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 2) Envers integration enabled? : true
+2016-10-05 00:41:45,708 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 2) HHH000227: Running hbm2ddl schema export
+2016-10-05 00:41:45,719 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table Comment if exists
+2016-10-05 00:41:45,720 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table Comment_Comment if exists
+2016-10-05 00:41:45,720 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table Post if exists
+2016-10-05 00:41:45,720 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table Post_Comment if exists
+2016-10-05 00:41:45,721 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table User if exists
+2016-10-05 00:41:45,721 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table User_Comment if exists
+2016-10-05 00:41:45,721 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop table User_Post if exists
+2016-10-05 00:41:45,722 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: drop sequence if exists hibernate_sequence
+2016-10-05 00:41:45,722 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+2016-10-05 00:41:45,723 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table Comment (id bigint not null, content varchar(3000) not null, creationDate date, downVotes integer not null, upVotes integer not null, author_id bigint, primary key (id))
+2016-10-05 00:41:45,724 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table Comment_Comment (Comment_id bigint not null, comments_id bigint not null)
+2016-10-05 00:41:45,725 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table Post (id bigint not null, content varchar(3000) not null, creationDate timestamp not null, downVotes integer not null, title varchar(130), upVotes integer not null, author_id bigint, primary key (id))
+2016-10-05 00:41:45,726 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table Post_Comment (Post_id bigint not null, comments_id bigint not null)
+2016-10-05 00:41:45,727 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table User (id bigint not null, address varchar(120), city varchar(120), country varchar(255), email varchar(255) not null, firstName varchar(120) not null, hash varchar(255) not null, lastName varchar(120) not null, salt varchar(26) not null, userId varchar(30) not null, primary key (id))
+2016-10-05 00:41:45,728 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table User_Comment (User_id bigint not null, comments_id bigint not null)
+2016-10-05 00:41:45,728 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: create table User_Post (User_id bigint not null, posts_id bigint not null)
+2016-10-05 00:41:45,729 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Comment_Comment add constraint UK_emjm85iut3gg2424j4ca655wo unique (comments_id)
+2016-10-05 00:41:45,730 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Post_Comment add constraint UK_5nd2ucnctmvwq31ovab2vi00x unique (comments_id)
+2016-10-05 00:41:45,730 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table User_Comment add constraint UK_ah9x95me6onvo198wl0s87lji unique (comments_id)
+2016-10-05 00:41:45,731 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table User_Post add constraint UK_sh5m62anjiodj8l9whe7oofbo unique (posts_id)
+2016-10-05 00:41:45,731 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Comment add constraint FKmve6jmvinowvmroe9om9bake1 foreign key (author_id) references User
+2016-10-05 00:41:45,738 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Comment_Comment add constraint FKjhw6e7sd1w2ptfru6bmuivlrb foreign key (comments_id) references Comment
+2016-10-05 00:41:45,739 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Comment_Comment add constraint FKo51r3kf9u24e8gsktybwog66s foreign key (Comment_id) references Comment
+2016-10-05 00:41:45,742 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Post add constraint FKn7gx6xx1edujxkuk0dcan2df0 foreign key (author_id) references User
+2016-10-05 00:41:45,745 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Post_Comment add constraint FK1yqm25y6mj9vmmxj4ev7aj2q1 foreign key (comments_id) references Comment
+2016-10-05 00:41:45,747 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table Post_Comment add constraint FKgtvmchqpjf5ysbhyg52cofvrn foreign key (Post_id) references Post
+2016-10-05 00:41:45,749 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table User_Comment add constraint FKrxs5nkgg2aaov9407wh1ifglp foreign key (comments_id) references Comment
+2016-10-05 00:41:45,751 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table User_Comment add constraint FKjhm6lfj7c3j3nfuqmflfogiki foreign key (User_id) references User
+2016-10-05 00:41:45,753 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table User_Post add constraint FKtp83m6v0ngia62i45nob705ax foreign key (posts_id) references Post
+2016-10-05 00:41:45,754 INFO  [stdout] (ServerService Thread Pool -- 2) Hibernate: alter table User_Post add constraint FK1bvlqf6qygpqqk6k7odi51jfg foreign key (User_id) references User
+2016-10-05 00:41:45,755 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 2) HHH000230: Schema export complete
+2016-10-05 00:41:45,763 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 2) HHH000397: Using ASTQueryTranslatorFactory
+2016-10-05 00:41:45,911 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 2) HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2016-10-05 00:41:45,913 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 2) HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2016-10-05 00:41:45,918 WARN  [org.hibernate.orm.deprecation] (ServerService Thread Pool -- 2) HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2016-10-05 00:41:46,947 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 26) Initializing Mojarra 2.2.13.SP1 20160303-1204 for context '/reddit'
+2016-10-05 00:41:47,650 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 26) Monitoring file:/Users/anitailieva/Documents/PG5100/PG5100-Java-EE/frontend/target/downloaded_Wildfly/wildfly-10.1.0.Final/standalone/tmp/vfs/temp/temp21c81974e903acbe/content-42d45fb16ea89c0f/WEB-INF/faces-config.xml for modifications
+2016-10-05 00:41:47,778 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 26) WFLYUT0021: Registered web context: /reddit
+2016-10-05 00:41:48,330 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0010: Deployed "frontend-1.0-SNAPSHOT.war" (runtime-name : "frontend-1.0-SNAPSHOT.war")
+2016-10-05 00:42:01,240 INFO  [stdout] (default task-3) Hibernate: call next value for hibernate_sequence
+2016-10-05 00:42:01,374 INFO  [stdout] (default task-3) Hibernate: insert into User (address, city, country, email, firstName, hash, lastName, salt, userId, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2016-10-05 00:42:01,473 INFO  [stdout] (default task-3) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:01,489 INFO  [stdout] (default task-3) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,235 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,242 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,260 INFO  [stdout] (default task-4) Hibernate: call next value for hibernate_sequence
+2016-10-05 00:42:06,265 INFO  [stdout] (default task-4) Hibernate: select user0_.id as id1_4_0_, user0_.address as address2_4_0_, user0_.city as city3_4_0_, user0_.country as country4_4_0_, user0_.email as email5_4_0_, user0_.firstName as firstNam6_4_0_, user0_.hash as hash7_4_0_, user0_.lastName as lastName8_4_0_, user0_.salt as salt9_4_0_, user0_.userId as userId10_4_0_ from User user0_ where user0_.id=?
+2016-10-05 00:42:06,304 INFO  [stdout] (default task-4) Hibernate: select posts0_.User_id as User_id1_6_0_, posts0_.posts_id as posts_id2_6_0_, post1_.id as id1_2_1_, post1_.author_id as author_i7_2_1_, post1_.content as content2_2_1_, post1_.creationDate as creation3_2_1_, post1_.downVotes as downVote4_2_1_, post1_.title as title5_2_1_, post1_.upVotes as upVotes6_2_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from User_Post posts0_ inner join Post post1_ on posts0_.posts_id=post1_.id left outer join User user2_ on post1_.author_id=user2_.id where posts0_.User_id=?
+2016-10-05 00:42:06,314 INFO  [stdout] (default task-4) Hibernate: select comments0_.User_id as User_id1_5_0_, comments0_.comments_id as comments2_5_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from User_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.User_id=?
+2016-10-05 00:42:06,334 INFO  [stdout] (default task-4) Hibernate: insert into Post (author_id, content, creationDate, downVotes, title, upVotes, id) values (?, ?, ?, ?, ?, ?, ?)
+2016-10-05 00:42:06,340 INFO  [stdout] (default task-4) Hibernate: insert into User_Post (User_id, posts_id) values (?, ?)
+2016-10-05 00:42:06,349 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,354 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:06,359 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,361 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:06,368 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,372 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:06,386 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,390 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:06,392 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,394 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:06,397 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,398 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:06,401 INFO  [stdout] (default task-4) Hibernate: select post0_.id as id1_2_, post0_.author_id as author_i7_2_, post0_.content as content2_2_, post0_.creationDate as creation3_2_, post0_.downVotes as downVote4_2_, post0_.title as title5_2_, post0_.upVotes as upVotes6_2_ from Post post0_
+2016-10-05 00:42:06,403 INFO  [stdout] (default task-4) Hibernate: select comments0_.Post_id as Post_id1_3_0_, comments0_.comments_id as comments2_3_0_, comment1_.id as id1_0_1_, comment1_.author_id as author_i6_0_1_, comment1_.content as content2_0_1_, comment1_.creationDate as creation3_0_1_, comment1_.downVotes as downVote4_0_1_, comment1_.upVotes as upVotes5_0_1_, user2_.id as id1_4_2_, user2_.address as address2_4_2_, user2_.city as city3_4_2_, user2_.country as country4_4_2_, user2_.email as email5_4_2_, user2_.firstName as firstNam6_4_2_, user2_.hash as hash7_4_2_, user2_.lastName as lastName8_4_2_, user2_.salt as salt9_4_2_, user2_.userId as userId10_4_2_ from Post_Comment comments0_ inner join Comment comment1_ on comments0_.comments_id=comment1_.id left outer join User user2_ on comment1_.author_id=user2_.id where comments0_.Post_id=?
+2016-10-05 00:42:12,624 INFO  [org.jboss.as.server] (Thread-3) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2016-10-05 00:42:12,823 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0022: Unregistered web context: /reddit
+2016-10-05 00:42:12,843 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2016-10-05 00:42:12,869 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 70) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
+2016-10-05 00:42:12,869 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 70) HHH000227: Running hbm2ddl schema export
+2016-10-05 00:42:12,871 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table Comment if exists
+2016-10-05 00:42:12,877 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table Comment_Comment if exists
+2016-10-05 00:42:12,879 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table Post if exists
+2016-10-05 00:42:12,880 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table Post_Comment if exists
+2016-10-05 00:42:12,881 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table User if exists
+2016-10-05 00:42:12,881 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 73) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2016-10-05 00:42:12,883 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table User_Comment if exists
+2016-10-05 00:42:12,884 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop table User_Post if exists
+2016-10-05 00:42:12,885 INFO  [stdout] (ServerService Thread Pool -- 70) Hibernate: drop sequence if exists hibernate_sequence
+2016-10-05 00:42:12,886 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] (ServerService Thread Pool -- 70) HHH000230: Schema export complete
+2016-10-05 00:42:12,889 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 70) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'frontend-1.0-SNAPSHOT.war#DB'
+2016-10-05 00:42:12,891 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-10-05 00:42:12,895 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2016-10-05 00:42:12,895 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2016-10-05 00:42:12,895 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-10-05 00:42:12,895 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2016-10-05 00:42:12,896 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2016-10-05 00:42:12,898 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.4.0.Final stopping
+2016-10-05 00:42:12,908 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment frontend-1.0-SNAPSHOT.war (runtime-name: frontend-1.0-SNAPSHOT.war) in 115ms
+2016-10-05 00:42:12,914 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 116ms

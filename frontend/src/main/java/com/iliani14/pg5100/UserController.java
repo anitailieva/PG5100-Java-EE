@@ -39,7 +39,7 @@ public class UserController implements Serializable {
 
     public String logOut() {
         registeredUser = null;
-        return "login.jsf";
+        return "home.jsf";
     }
 
 
