@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
+>
+
+
+<ui:composition template="../layout.xhtml">
+    <ui:define name="title">Create New User</ui:define>
+
+    <ui:define name="content">
+        <h:form id="registerForm">
+            <h:panelGrid columns="2">
+                <h:outputLabel value="User name : "/>
+                <h:inputText value="#{userController.formUserName}" id="userId"/>
+
+                <h:outputLabel value="Password : "/>
+                <h:inputSecret value="#{userController.formPassword}" id="password"/>
+
+                <h:outputLabel value="Name : "/>
+                <h:inputText value="#{userController.formName}" id="name"/>
+
+                <h:outputLabel value="Surname : "/>
+                <h:inputText value="#{userController.formSurname}" id="surname"/>
+
+                <h:outputLabel value="Email : "/>
+                <h:inputText value="#{userController.formPassword}" id="email"/>
+
+                <h:outputLabel value="Country : "/>
+                <h:inputSecret value="#{userController.formCountry}" id="country"/>
+
+
+                <h:selectOneMenu value="#{userController.}">
+                    <f:selectItems value="#{myUtility.createSelectItemByEnumClass(myCdiBean.selectItemClass)}"/>
+                </h:selectOneMenu>
+            </h:panelGrid>
+
+            <h:commandButton value="Register new" action="#{userController.registerNew}" id="create"/>
+        </h:form>
+    </ui:define>
+</ui:composition>
+</html>
