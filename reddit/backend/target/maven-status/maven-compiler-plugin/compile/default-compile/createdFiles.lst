@@ -1,0 +1,7 @@
+com/iliani14/pg5100/entities/User.class
+com/iliani14/pg5100/services/CommentEJB.class
+com/iliani14/pg5100/entities/Comment.class
+com/iliani14/pg5100/entities/Countries.class
+com/iliani14/pg5100/services/UserEJB.class
+com/iliani14/pg5100/services/PostEJB.class
+com/iliani14/pg5100/entities/Post.class

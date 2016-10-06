@@ -1,0 +1,5 @@
+com/iliani14/pg5100/test/DeleterEJB.class
+com/iliani14/pg5100/entities/PostTest.class
+com/iliani14/pg5100/entities/CommentTest.class
+com/iliani14/pg5100/services/UserEJBTest.class
+com/iliani14/pg5100/entities/UserTest.class
