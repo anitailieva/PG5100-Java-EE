@@ -1,5 +1,7 @@
 package com.iliani15.pg5100.exam_example.entity;
 
+import com.iliani15.pg5100.exam_example.validation.Country;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -25,7 +27,7 @@ public class Event {
     @NotNull @Size(min=1, max=32)
     private String author;
 
-    @Enumerated(value = EnumType.ORDINAL)
+    @Country
     private String country;
 
     @NotNull @Size(min=1, max=256)
@@ -46,7 +48,7 @@ public class Event {
     public void setCountry(String country) {
         this.country = country;
     }
-
+    
     public String getLocation() {
         return location;
     }

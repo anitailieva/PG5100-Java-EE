@@ -1,5 +1,7 @@
 package com.iliani15.pg5100.exam_example.entity;
 
+import com.iliani15.pg5100.exam_example.validation.Country;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -30,7 +32,7 @@ public class User {
     @Size(min=1 , max = 40)
     private String surname;
 
-    @Enumerated(value = EnumType.ORDINAL)
+    @Country
     private String country;
 
 
@@ -87,6 +89,7 @@ public class User {
     public void setCountry(String country) {
         this.country = country;
     }
+
 
     public List<Event> getEventList() {
         if(eventList == null){
