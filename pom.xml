@@ -2,16 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.iliani14.pg5100</groupId>
   <artifactId>root</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <groupId>com.iliani14.pg5100</groupId>
 
 
   <modules>
-    <module>backend</module>
-    <module>frontend</module>
-    <module>report</module>
+      <module>reddit</module>
+      <module>exam_example</module>
   </modules>
 
   <properties>
@@ -88,6 +87,14 @@
         <version>1.4.192</version>
         <scope>provided</scope>
       </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-annotations</artifactId>
+        <version>3.5.6-Final</version>
+        <scope>provided</scope>
+      </dependency>
+
+
 
 
       <!-- test -->
@@ -151,13 +158,6 @@
         <artifactId>org.jacoco.core</artifactId>
         <version>${version.jacoco}</version>
         <scope>test</scope>
-      </dependency>
-
-      <dependency>
-        <!-- embedded JEE GlassFish container -->
-        <groupId>org.glassfish.main.extras</groupId>
-        <artifactId>glassfish-embedded-all</artifactId>
-        <version>4.1.1</version>
       </dependency>
 
 
@@ -248,44 +248,13 @@
           </executions>
         </plugin>
 
-        <!--
-            Maven phases:
-            https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference
-            Main ones:
-            *clean*
-            compile
-            process-test-classes
-            test
-            package
-            pre-integration-test
-            integration-test
-            post-integration-test
-            verify
-            install
-            deploy
-            apart from *clean*, when executing one of those phases (eg "mvn test"), all previous
-            phases are executed as well.
-            Note:
-            process-test-classes: this is when we download/unpack Wildfly
-            test: unit tests (*Test.java) are executed
-            package: creation of jar/war files
-            pre-integration-test: we start Wildfly for the integration tests
-            integration-test: execute all *IT.java tests
-            post-integration-test: stop Wildfly
-            install: copy the jar/war files into your ~/.m2 folder (like any other dependency)
-            clean: delete everything in the "target" folders
-        -->
 
-
-        <!--
-           Plugin configuration to automatically start WildFly before integration tests are
-           started, and then stop it once all are finished
-        -->
         <plugin>
           <groupId>org.wildfly.plugins</groupId>
           <artifactId>wildfly-maven-plugin</artifactId>
           <version>1.1.0.Alpha11</version>
           <configuration>
+            <skip>true</skip>
             <!--
                 If jbossHome is not specified, this plugin will download it.
                 Here, we point to the same installation done for the unit tests
