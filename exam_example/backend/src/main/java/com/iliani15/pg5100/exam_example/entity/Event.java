@@ -12,7 +12,16 @@ import java.util.List;
  * Created by anitailieva on 07/10/2016.
  */
 @Entity
+@NamedQueries({
+        @NamedQuery(name = Event.GET_ALL_EVENTS, query = "SELECT e FROM Event e"),
+        @NamedQuery(name = Event.GET_COUNTRIES, query = "SELECT e FROM Event e WHERE e.country = :fcountry")
+})
+
 public class Event {
+
+    public static final String GET_ALL_EVENTS = "GET ALL EVENTS";
+    public static final String GET_COUNTRIES = "GET ALL COUNTRIES";
+
 
     @Id
     @GeneratedValue
@@ -48,7 +57,7 @@ public class Event {
     public void setCountry(String country) {
         this.country = country;
     }
-    
+
     public String getLocation() {
         return location;
     }

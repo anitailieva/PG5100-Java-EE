@@ -13,6 +13,7 @@ import java.util.List;
  * Created by anitailieva on 07/10/2016.
  */
 @Entity
+
 public class User {
 
     @Id
