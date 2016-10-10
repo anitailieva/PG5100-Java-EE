@@ -15,12 +15,6 @@
     </parent>
 
     <dependencies>
-        <!--
-            All modules we want to collect JaCoCo reports from do need
-            to be declared here.
-            Note: this will also calculate transitive coverage, ie coverage
-            in module B when executing tests in A that have dependency on B.
-        -->
         <dependency>
             <groupId>com.iliani14.pg5100.exam_example</groupId>
             <artifactId>backend</artifactId>

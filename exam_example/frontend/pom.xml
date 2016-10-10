@@ -94,7 +94,6 @@
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <configuration>
-                    <skip>false</skip>
                     <!--
                         This is quite complex (ie Java Agents and bytecode instrumentantion on the fly)...
                         for now just copy&paste it.
