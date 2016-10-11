@@ -1,7 +1,9 @@
+package com.iliani14.pg5100.exam_example;
+
+import com.iliani14.pg5100.exam_example.po.HomePageObject;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import po.HomePageObject;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -17,13 +19,15 @@ public class SeleniumTestBase {
     protected static HomePageObject hp;
     private static WebDriver driver;
 
-    protected WebDriver getDriver() {
+
+    protected WebDriver getDriver(){
         return driver;
     }
 
-    public String getPageSource() {
+    protected String getPageSource(){
         return driver.getPageSource();
     }
+
 
     private static boolean tryToSetGeckoIfExists(String property, Path path) {
         if (Files.exists(path)) {
@@ -45,16 +49,30 @@ public class SeleniumTestBase {
         }
     }
 
-    private static WebDriver getChromeDriver(){
+    private static WebDriver getChromeDriver() {
+
+        /*
+            Need to have Chrome (eg version 53.x) and the Chrome Driver (eg 2.24),
+            whose executable should be saved directly under your home directory
+
+            see https://sites.google.com/a/chromium.org/chromedriver/getting-started
+         */
+
         setupDriverExecutable("chromedriver", "webdriver.chrome.driver");
 
         return new ChromeDriver();
     }
 
     @BeforeClass
-    public static void init() throws InterruptedException{
+    public static void init() throws InterruptedException {
+
         driver = getChromeDriver();
 
+        /*
+            When the integration tests in this class are run, it might be
+            that WildFly is not ready yet, although it was started. So
+            we need to wait till it is ready.
+         */
         for (int i = 0; i < 30; i++) {
             boolean ready = JBossUtil.isJBossUpAndRunning();
             if (!ready) {
@@ -67,21 +85,5 @@ public class SeleniumTestBase {
 
     }
 
-    public void tearDown(){
-        driver.close();
-    }
 
-    protected static void createAndLoginNewUser(String user, String password){
-
-
-    }
-    protected static void createEvent(){
-
-    }
-
-    protected static void loginUser(){
-
-    }
 }
-
-
