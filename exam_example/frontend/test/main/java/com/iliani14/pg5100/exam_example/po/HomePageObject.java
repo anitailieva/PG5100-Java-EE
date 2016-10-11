@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class HomePageObject extends PageObject {
 
     public HomePageObject(WebDriver driver){
-    super(driver);
+        super(driver);
     }
 
     public boolean isOnPage() {
