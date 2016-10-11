@@ -1,6 +1,7 @@
 package com.iliani14.pg5100.exam_example;
 
 import com.iliani14.pg5100.exam_example.po.HomePageObject;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,15 +17,16 @@ import static org.junit.Assert.fail;
  */
 public class SeleniumTestBase {
 
-    protected static HomePageObject hp;
+
+    protected static HomePageObject home;
     private static WebDriver driver;
 
 
-    protected WebDriver getDriver(){
+    protected WebDriver getDriver() {
         return driver;
     }
 
-    protected String getPageSource(){
+    protected String getPageSource() {
         return driver.getPageSource();
     }
 
@@ -51,12 +53,7 @@ public class SeleniumTestBase {
 
     private static WebDriver getChromeDriver() {
 
-        /*
-            Need to have Chrome (eg version 53.x) and the Chrome Driver (eg 2.24),
-            whose executable should be saved directly under your home directory
 
-            see https://sites.google.com/a/chromium.org/chromedriver/getting-started
-         */
 
         setupDriverExecutable("chromedriver", "webdriver.chrome.driver");
 
@@ -68,11 +65,7 @@ public class SeleniumTestBase {
 
         driver = getChromeDriver();
 
-        /*
-            When the integration tests in this class are run, it might be
-            that WildFly is not ready yet, although it was started. So
-            we need to wait till it is ready.
-         */
+
         for (int i = 0; i < 30; i++) {
             boolean ready = JBossUtil.isJBossUpAndRunning();
             if (!ready) {
@@ -85,5 +78,10 @@ public class SeleniumTestBase {
 
     }
 
+
+    @AfterClass
+    public static void tearDown() {
+        driver.close();
+    }
 
 }
