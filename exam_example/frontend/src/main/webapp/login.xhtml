@@ -19,12 +19,12 @@
                     <h:inputText value="#{loggingController.formUserName}" id="username"/>
 
                     <h:outputLabel value="Password"/>
-                    <h:inputSecret value="#{loggingController.formPassword}"/>
+                    <h:inputSecret value="#{loggingController.formPassword}" id="password"/>
                 </h:panelGrid>
                 <h:commandButton value="Log in" action="#{loggingController.logIn}" id="loginButton"/>
             </h:form>
             <h:button value="Create new user" outcome="newUser.jsf" id="newUser"/>
-            <h:button value="Cancel" outcome="home.jsf" id="home"/>
+            <h:button value="Cancel" outcome="home.jsf" id="cancel"/>
 
         </ui:define>
     </ui:composition>
