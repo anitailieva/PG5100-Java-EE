@@ -22,6 +22,14 @@ public abstract class PageObject {
 
     public abstract boolean isOnPage();
 
+    protected String getBaseUrl(){
+        return "http://localhost:8080/exam_example/";
+    }
+
+    protected WebDriver getDriver(){
+        return driver;
+    }
+
     public void logout(){
 
         List<WebElement> logout = driver.findElements(By.id("logoutForm:logout"));
