@@ -14,7 +14,7 @@ import java.util.List;
  */
 public abstract class PageObject {
 
-    protected final WebDriver driver;
+    private final WebDriver driver;
 
     public PageObject(WebDriver driver) {
         this.driver = driver;
@@ -22,13 +22,29 @@ public abstract class PageObject {
 
     public abstract boolean isOnPage();
 
+    public WebDriver getDriver(){
+        return driver;
+    }
+    public void setText(String id, String text){
+        WebElement element = driver.findElement(By.id(id));
+        element.clear();
+        element.sendKeys(text);
+    }
+
+    protected Boolean waitForPageToLoad() {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver, 10); //give up after 10 seconds
+
+        //keep executing the given JS till it returns "true", when page is fully loaded and ready
+        return wait.until((ExpectedCondition<Boolean>) input -> {
+            String res = jsExecutor.executeScript("return /loaded|complete/.test(document.readyState);").toString();
+            return Boolean.parseBoolean(res);
+        });
+    }
     protected String getBaseUrl(){
         return "http://localhost:8080/exam_example/";
     }
 
-    protected WebDriver getDriver(){
-        return driver;
-    }
 
     public void logout(){
 
@@ -39,11 +55,7 @@ public abstract class PageObject {
         }
     }
 
-    public void setText(String id, String text){
-        WebElement element = driver.findElement(By.id(id));
-        element.clear();
-        element.sendKeys(text);
-    }
+
 
     public boolean isLoggedIn(){
         List<WebElement> logout = driver.findElements(By.id("logoutForm:logout"));
@@ -58,14 +70,4 @@ public abstract class PageObject {
         return driver.findElement(By.id("welcomeMessage")).getText().contains(user);
     }
 
-    protected Boolean waitForPageToLoad() {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        WebDriverWait wait = new WebDriverWait(driver, 10); //give up after 10 seconds
-
-        //keep executing the given JS till it returns "true", when page is fully loaded and ready
-        return wait.until((ExpectedCondition<Boolean>) input -> {
-            String res = jsExecutor.executeScript("return /loaded|complete/.test(document.readyState);").toString();
-            return Boolean.parseBoolean(res);
-        });
-    }
 }

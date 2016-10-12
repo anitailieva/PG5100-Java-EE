@@ -7,21 +7,19 @@ import org.openqa.selenium.WebDriver;
  */
 public class HomePageObject extends PageObject {
 
-
     public HomePageObject(WebDriver driver) {
         super(driver);
     }
 
-    public HomePageObject toStartingPage() {
-        String context = "/exam_example";
-        driver.get("localhost:8080" + context + "/home.jsf");
+    public void toStartingPage() {
+        getDriver().get(getBaseUrl() + "home.jsf");
         waitForPageToLoad();
-
-        return this;
     }
-
+    @Override
     public boolean isOnPage() {
-        return driver.getTitle().equals("Event List Home Page");
+        return getDriver().getTitle().equals("Event List Home Page");
     }
+
+
 
 }

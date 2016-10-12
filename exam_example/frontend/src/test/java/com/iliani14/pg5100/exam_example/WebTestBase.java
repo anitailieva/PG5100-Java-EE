@@ -1,7 +1,7 @@
 package com.iliani14.pg5100.exam_example;
 
-import com.iliani14.pg5100.exam_example.po.HomePageObject;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,20 +9,44 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.concurrent.atomic.AtomicLong;
 
 import static org.junit.Assert.fail;
+import static org.junit.Assume.assumeTrue;
 
 /**
  * Created by anitailieva on 11/10/2016.
  */
 
-public class WebTestBase {
+public abstract class WebTestBase {
 
-    private static final AtomicLong counter = new AtomicLong(System.currentTimeMillis());
-
-    protected static HomePageObject home;
     private static WebDriver driver;
+
+    @Before
+    public void checkIfWildflyIsRunning(){
+        assumeTrue("Wildfly is not up and running", JBossUtil.isJBossUpAndRunning());
+    }
+
+    @BeforeClass
+    public static void init() throws InterruptedException {
+
+        driver = getChromeDriver();
+
+        for (int i = 0; i < 30; i++) {
+            boolean ready = JBossUtil.isJBossUpAndRunning();
+            if (!ready) {
+                Thread.sleep(1_000); //check every second
+                continue;
+            } else {
+                break;
+            }
+        }
+
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        driver.close();
+    }
 
 
     protected WebDriver getDriver(){
@@ -59,27 +83,4 @@ public class WebTestBase {
 
         return new ChromeDriver();
     }
-
-    @BeforeClass
-    public static void init() throws InterruptedException {
-
-        driver = getChromeDriver();
-
-        for (int i = 0; i < 30; i++) {
-            boolean ready = JBossUtil.isJBossUpAndRunning();
-            if (!ready) {
-                Thread.sleep(1_000); //check every second
-                continue;
-            } else {
-                break;
-            }
-        }
-
-    }
-
-    @AfterClass
-    public static void tearDown() {
-        driver.close();
-    }
-
 }

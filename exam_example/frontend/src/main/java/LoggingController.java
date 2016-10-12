@@ -64,7 +64,7 @@ public class LoggingController implements Serializable {
         return userEJB.getUser(registeredUser).getCountry();
     }
 
-    public boolean loggedIn() {
+    public boolean isLoggedIn() {
         return registeredUser != null;
     }
     public User getUser() {

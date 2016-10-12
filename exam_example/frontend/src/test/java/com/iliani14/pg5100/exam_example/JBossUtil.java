@@ -19,27 +19,26 @@ import javax.ws.rs.core.Response;
  */
 public class JBossUtil {
 
+    private static ResteasyClient getClient() {
+        // Setting digest credentials
+        CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
+        UsernamePasswordCredentials credentials = new UsernamePasswordCredentials("admin", "admin");
+        credentialsProvider.setCredentials(AuthScope.ANY, credentials);
+        HttpClient httpclient = HttpClientBuilder.create().setDefaultCredentialsProvider(credentialsProvider).build();
+        ApacheHttpClient4Engine engine = new ApacheHttpClient4Engine(httpclient, true);
 
-        private static ResteasyClient getClient() {
-            // Setting digest credentials
-            CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
-            UsernamePasswordCredentials credentials = new UsernamePasswordCredentials("admin", "admin");
-            credentialsProvider.setCredentials(AuthScope.ANY, credentials);
-            HttpClient httpclient = HttpClientBuilder.create().setDefaultCredentialsProvider(credentialsProvider).build();
-            ApacheHttpClient4Engine engine = new ApacheHttpClient4Engine(httpclient, true);
+        // Creating HTTP client
+        return new ResteasyClientBuilder().httpEngine(engine).build();
+    }
 
-            // Creating HTTP client
-            return new ResteasyClientBuilder().httpEngine(engine).build();
+    public static boolean isJBossUpAndRunning() {
+
+        try {
+            WebTarget target = getClient().target("http://localhost:9990/management").queryParam("operation", "attribute").queryParam("name", "server-state");
+            Response response = target.request(MediaType.APPLICATION_JSON).get();
+            return response.getStatus() == Response.Status.OK.getStatusCode() && response.readEntity(String.class).contains("running");
+        } catch (Exception e){
+            return false;
         }
-
-        public static boolean isJBossUpAndRunning() {
-
-            try {
-                WebTarget target = getClient().target("http://localhost:9990/management").queryParam("operation", "attribute").queryParam("name", "server-state");
-                Response response = target.request(MediaType.APPLICATION_JSON).get();
-                return response.getStatus() == Response.Status.OK.getStatusCode() && response.readEntity(String.class).contains("running");
-            } catch (Exception e){
-                return false;
-            }
-        }
+    }
 }
