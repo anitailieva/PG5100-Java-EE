@@ -13,25 +13,28 @@ import java.util.List;
  * Created by anitailieva on 11/10/2016.
  */
 public abstract class PageObject {
+
     protected final WebDriver driver;
 
-    public PageObject(WebDriver driver){
+    public PageObject(WebDriver driver) {
         this.driver = driver;
     }
 
     public abstract boolean isOnPage();
 
-    public void setText( String id, String text){
-        WebElement element = driver.findElement(By.id(id));
-        element.clear();
-        element.sendKeys(text);
-    }
     public void logout(){
+
         List<WebElement> logout = driver.findElements(By.id("logoutForm:logout"));
         if(! logout.isEmpty()){
             logout.get(0).click();
             waitForPageToLoad();
         }
+    }
+
+    public void setText(String id, String text){
+        WebElement element = driver.findElement(By.id(id));
+        element.clear();
+        element.sendKeys(text);
     }
 
     public boolean isLoggedIn(){

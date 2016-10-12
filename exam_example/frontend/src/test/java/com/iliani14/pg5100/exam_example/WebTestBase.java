@@ -9,24 +9,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.concurrent.atomic.AtomicLong;
 
 import static org.junit.Assert.fail;
 
 /**
  * Created by anitailieva on 11/10/2016.
  */
-public class SeleniumTestBase {
 
+public class WebTestBase {
+
+    private static final AtomicLong counter = new AtomicLong(System.currentTimeMillis());
 
     protected static HomePageObject home;
     private static WebDriver driver;
 
 
-    protected WebDriver getDriver() {
+    protected WebDriver getDriver(){
         return driver;
     }
 
-    protected String getPageSource() {
+    protected String getPageSource(){
         return driver.getPageSource();
     }
 
@@ -52,9 +55,6 @@ public class SeleniumTestBase {
     }
 
     private static WebDriver getChromeDriver() {
-
-
-
         setupDriverExecutable("chromedriver", "webdriver.chrome.driver");
 
         return new ChromeDriver();
@@ -64,7 +64,6 @@ public class SeleniumTestBase {
     public static void init() throws InterruptedException {
 
         driver = getChromeDriver();
-
 
         for (int i = 0; i < 30; i++) {
             boolean ready = JBossUtil.isJBossUpAndRunning();
@@ -77,7 +76,6 @@ public class SeleniumTestBase {
         }
 
     }
-
 
     @AfterClass
     public static void tearDown() {
