@@ -1,5 +1,6 @@
 package com.iliani14.pg5100.exam_example.po;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -20,6 +21,14 @@ public class HomePageObject extends PageObject {
         return getDriver().getTitle().equals("Event List Home Page");
     }
 
+    public LoginPageObject toLogin(){
+        if(isLoggedIn()){
+            logout();
+        }
 
+        getDriver().findElement(By.id("login")).click();
+        waitForPageToLoad();
+        return new LoginPageObject(getDriver());
+    }
 
 }
