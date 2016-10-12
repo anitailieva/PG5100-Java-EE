@@ -35,8 +35,8 @@ public class LoggingController implements Serializable {
     public LoggingController(){
 
     }
-    public String login(String userId, String password) {
-        boolean valid = userEJB.login(userId, password);
+    public String logIn() {
+        boolean valid = userEJB.login(formUserName, formPassword);
         if (valid) {
             registeredUser = formUserName;
             return "home.jsf";
