@@ -26,9 +26,9 @@ public class LoginPageObject extends PageObject{
 
     public HomePageObject doLogin(String user, String password){
 
-        setText("loginForm:userName", user);
+        setText("loginForm:username", user);
         setText("loginForm:password", password);
-        getDriver().findElement(By.id("loginForm:loginButton"));
+        getDriver().findElement(By.id("loginForm:loginButton")).click();
 
         if(isOnPage()){
             return null;
