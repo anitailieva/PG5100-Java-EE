@@ -20,15 +20,12 @@ public class LoggingController implements Serializable {
     @EJB
     private UserEJB userEJB;
 
-
     private String formUserName;
     private String formPassword;
     private String formConfirmPassword;
     private String formFirstName;
-    private String formMiddleName;
     private String formLastName;
     private String formCountry;
-
     private String registeredUser;
 
 
@@ -57,6 +54,7 @@ public class LoggingController implements Serializable {
     public List<String> getUserCountry() {
     return Countries.getCountries();
     }
+
     public String getCountry() {
         if (registeredUser == null) {
             return null;
@@ -64,12 +62,29 @@ public class LoggingController implements Serializable {
         return userEJB.getUser(registeredUser).getCountry();
     }
 
+    public String registerNew(){
+        if(! formPassword.equals(formConfirmPassword)){
+            return "newUser.jsf";
+        }
+        boolean registered = userEJB.createUser(formUserName, formPassword, formFirstName, formLastName, formCountry);
+
+        if(registered){
+            registeredUser = formUserName;
+            return "home.jsf";
+        } else {
+            return "newUser.jsf";
+        }
+    }
+
     public boolean isLoggedIn() {
         return registeredUser != null;
     }
+
     public User getUser() {
     return userEJB.getUser(registeredUser);
     }
+
+
 
     public String getFormUserName() {
         return formUserName;
@@ -101,14 +116,6 @@ public class LoggingController implements Serializable {
 
     public void setFormFirstName(String formFirstName) {
         this.formFirstName = formFirstName;
-    }
-
-    public String getFormMiddleName() {
-        return formMiddleName;
-    }
-
-    public void setFormMiddleName(String formMiddleName) {
-        this.formMiddleName = formMiddleName;
     }
 
     public String getFormLastName() {
