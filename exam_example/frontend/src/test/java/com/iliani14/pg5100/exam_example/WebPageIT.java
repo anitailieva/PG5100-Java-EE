@@ -1,10 +1,12 @@
 package com.iliani14.pg5100.exam_example;
 
 import com.iliani14.pg5100.exam_example.po.HomePageObject;
+import com.iliani14.pg5100.exam_example.po.LoginPageObject;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -27,8 +29,22 @@ public class WebPageIT extends WebTestBase {
     @Test
     public void testHomePage() {
         hp.toStartingPage();
-    assertTrue(hp.isOnPage());
+        assertTrue(hp.isOnPage());
 
+    }
+
+    @Test
+    public void testLoginLink() {
+        LoginPageObject loginPageObject = hp.toLogin();
+        assertTrue(loginPageObject.isOnPage());
+    }
+
+    @Test
+    public void testLoginWrongUser(){
+        LoginPageObject lo = hp.toLogin();
+        HomePageObject ho =  lo.doLogin("name", "Pass");
+        assertNull(ho);
+        assertTrue(lo.isOnPage());
     }
 
 }
