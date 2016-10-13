@@ -35,13 +35,13 @@ public class WebPageIT extends WebTestBase {
 
     @Test
     public void testLoginLink() {
-        LoginPageObject loginPageObject = hp.toLogin();
+        LoginPageObject loginPageObject = hp.goToLogin();
         assertTrue(loginPageObject.isOnPage());
     }
 
     @Test
     public void testLoginWrongUser(){
-        LoginPageObject lo = hp.toLogin();
+        LoginPageObject lo = hp.goToLogin();
         HomePageObject ho =  lo.doLogin("name", "Pass");
         assertNull(ho);
         assertTrue(lo.isOnPage());
