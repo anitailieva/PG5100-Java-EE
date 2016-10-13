@@ -21,7 +21,7 @@ public class HomePageObject extends PageObject {
         return getDriver().getTitle().equals("Event List Home Page");
     }
 
-    public LoginPageObject toLogin(){
+    public LoginPageObject goToLogin(){
         if(isLoggedIn()){
             logout();
         }
@@ -30,5 +30,6 @@ public class HomePageObject extends PageObject {
         waitForPageToLoad();
         return new LoginPageObject(getDriver());
     }
+
 
 }
