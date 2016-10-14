@@ -42,4 +42,11 @@ public class LoginPageObject extends PageObject{
         waitForPageToLoad();
         return new HomePageObject(getDriver());
     }
+
+    public CreateUserPageObject createNewUser(){
+        getDriver().findElement(By.id("newUser")).click();
+        waitForPageToLoad();
+        return new CreateUserPageObject(getDriver());
+
+    }
 }
