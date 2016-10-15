@@ -1,4 +1,5 @@
-import com.iliani14.pg5100.exam_example.Countries;
+package com.iliani14.pg5100.exam_example;
+
 import com.iliani14.pg5100.exam_example.ejb.UserEJB;
 import com.iliani14.pg5100.exam_example.entity.User;
 
