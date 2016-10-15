@@ -1,5 +1,8 @@
 package com.iliani14.pg5100.exam_example;
 
+import com.iliani14.pg5100.exam_example.po.CreateUserPageObject;
+import com.iliani14.pg5100.exam_example.po.HomePageObject;
+import com.iliani14.pg5100.exam_example.po.LoginPageObject;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -10,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeTrue;
 
@@ -20,9 +24,10 @@ import static org.junit.Assume.assumeTrue;
 public abstract class WebTestBase {
 
     private static WebDriver driver;
+    protected static HomePageObject hpo;
 
     @Before
-    public void checkIfWildflyIsRunning(){
+    public void checkIfWildflyIsRunning() {
         assumeTrue("Wildfly is not up and running", JBossUtil.isJBossUpAndRunning());
     }
 
@@ -49,11 +54,11 @@ public abstract class WebTestBase {
     }
 
 
-    protected WebDriver getDriver(){
+    protected WebDriver getDriver() {
         return driver;
     }
 
-    protected String getPageSource(){
+    protected String getPageSource() {
         return driver.getPageSource();
     }
 
@@ -83,4 +88,23 @@ public abstract class WebTestBase {
 
         return new ChromeDriver();
     }
+
+
+    protected static void createAndLogNewUser(String userId, String name, String surname, String country) {
+        hpo.logout();
+        LoginPageObject login = hpo.goToLogin();
+        CreateUserPageObject create = login.createNewUser();
+        create.createUser(userId, "pass", "pass", name, surname, country);
+        assertTrue(hpo.isLoggedIn(userId));
+    }
+
+
+    protected static void loginAnExistingUser(String userId, String password){
+        hpo.logout();
+        LoginPageObject login = hpo.goToLogin();
+        login.doLogin(userId, password);
+        assertTrue(hpo.isOnPage());
+
+    }
+
 }
