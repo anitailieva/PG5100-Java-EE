@@ -1,5 +1,6 @@
 package com.iliani14.pg5100.exam_example;
 
+import com.iliani14.pg5100.exam_example.po.CreateEventPageObject;
 import com.iliani14.pg5100.exam_example.po.CreateUserPageObject;
 import com.iliani14.pg5100.exam_example.po.HomePageObject;
 import com.iliani14.pg5100.exam_example.po.LoginPageObject;
@@ -84,4 +85,40 @@ public class WebPageIT extends WebTestBase {
         assertTrue(home.isOnPage());
         assertTrue(home.isLoggedIn());
     }
+
+    @Test
+    public void testCreateOneEvent() {
+        createAndLogNewUser("username", "name", "surname", "Norway");
+        hpo.setShowOnlyOwnCountry(true);
+
+        int n = hpo.getNumberOfDisplayedEvents();
+        String title = "title";
+
+        CreateEventPageObject create = hpo.goToCreateEvent();
+        hpo = create.createEvent(title, "Text", "Norway", "Oslo");
+        assertNotNull(hpo);
+        assertEquals(n+1, hpo.getNumberOfDisplayedEvents());
+        assertTrue(getPageSource().contains(title));
+    }
+
+    @Test
+    public void testCreateEventInDifferentCountries(){
+
+    }
+
+    @Test
+    public void testCreateEventsFromDifferenUsers(){
+
+    }
+
+    @Test
+    public void testCreateAndAttendEvent(){
+
+    }
+
+    @Test
+    public void testTwoUsersAttendingSameEvent(){
+
+    }
+
 }
