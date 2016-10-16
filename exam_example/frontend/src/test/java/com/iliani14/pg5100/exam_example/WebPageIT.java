@@ -124,6 +124,24 @@ public class WebPageIT extends WebTestBase {
 
     @Test
     public void testCreateEventsFromDifferenUsers(){
+        String user1 = "me";
+        createAndLogNewUser(user1, "one", "one", "Norway");
+        CreateEventPageObject event1 = hpo.goToCreateEvent();
+        hpo = event1.createEvent("Title", "Some text", "Norway", "Oslo");
+        hpo.logout();
+
+        String user2 = "you";
+        createAndLogNewUser(user2, "two", "two", "Germany");
+        CreateEventPageObject event2 = hpo.goToCreateEvent();
+        hpo = event2.createEvent("Event", "Text", "Germany", "Berlin");
+
+        hpo.setShowOnlyOwnCountry(false);
+        int n = hpo.getNumberOfDisplayedEvents();
+
+        assertEquals(n, hpo.getNumberOfDisplayedEvents());
+        assertTrue(getPageSource().contains(user1));
+        assertTrue(getPageSource().contains(user2));
+
 
     }
 
