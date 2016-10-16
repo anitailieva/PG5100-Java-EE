@@ -12,7 +12,9 @@
         <ui:define name="title">Create New Event</ui:define>
 
         <ui:define name="content">
+
             <h:form id="createEventForm">
+
                 <h:panelGrid columns="2">
                     <h:outputLabel value="Title :"/>
                     <h:inputText value="#{createEventController.formTitle}" id="title"/>
@@ -32,9 +34,9 @@
                 </h:panelGrid>
 
                 <h:commandButton value="Create" action="#{createEventController.createEvent}" id="createButton"/>
-            </h:form>
 
-            <h:button value="Cancel" outcome="home.jsf" />
+                <h:button value="Cancel" outcome="home.jsf" />
+            </h:form>
 
         </ui:define>
     </ui:composition>
