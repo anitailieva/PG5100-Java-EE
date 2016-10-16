@@ -56,10 +56,10 @@
                     <h:column>
                         <f:facet name="header">Going</f:facet>
                         <h:form>
-                            <h:selectBooleanCheckbox value="#{eventControllerAttendMap[event.id]}"
+                            <h:selectBooleanCheckbox value="#{eventController.attend[event.id]}"
                                                      onclick="submit()"
-                                                     valueChangeListener="#{eventController.updateAttendance(event.id,
-                                                     ! eventController.attendMap[event.id])}"/>
+                                                     valueChangeListener="#{eventController.updateAttending(event.id,
+                                                     ! eventController.attend[event.id])}"/>
                         </h:form>
                     </h:column>
                 </c:if>
