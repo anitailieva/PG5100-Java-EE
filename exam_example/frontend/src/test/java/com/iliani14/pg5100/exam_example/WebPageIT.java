@@ -103,7 +103,23 @@ public class WebPageIT extends WebTestBase {
 
     @Test
     public void testCreateEventInDifferentCountries(){
+        String country1 = "Norway";
+        String country2 = "United States";
 
+        createAndLogNewUser("user1", "name1", "lastname1", country1);
+
+        CreateEventPageObject create = hpo.goToCreateEvent();
+        hpo = create.createEvent("Concert", "On Saturday", country1, "Oslo");
+        create = hpo.goToCreateEvent();
+        hpo = create.createEvent("Party", "Bring alcohol", country2, "New York");
+
+        hpo.setShowOnlyOwnCountry(false);
+        int onlyOff = hpo.getNumberOfDisplayedEvents();
+        assertEquals(onlyOff, hpo.getNumberOfDisplayedEvents());
+
+        hpo.setShowOnlyOwnCountry(true);
+        int onlyOn = hpo.getNumberOfDisplayedEvents();
+        assertEquals(onlyOn, hpo.getNumberOfDisplayedEvents());
     }
 
     @Test
