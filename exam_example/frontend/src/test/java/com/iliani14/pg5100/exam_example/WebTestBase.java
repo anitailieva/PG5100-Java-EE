@@ -1,5 +1,6 @@
 package com.iliani14.pg5100.exam_example;
 
+import com.iliani14.pg5100.exam_example.po.CreateEventPageObject;
 import com.iliani14.pg5100.exam_example.po.CreateUserPageObject;
 import com.iliani14.pg5100.exam_example.po.HomePageObject;
 import com.iliani14.pg5100.exam_example.po.LoginPageObject;
@@ -98,6 +99,10 @@ public abstract class WebTestBase {
         assertTrue(hpo.isLoggedIn(userId));
     }
 
+    protected static void createEvent(String title, String description, String country, String location) {
+        CreateEventPageObject create = hpo.goToCreateEvent();
+        hpo = create.createEvent(title, description, country, location);
+    }
 
     protected static void loginAnExistingUser(String userId, String password){
         hpo.logout();
