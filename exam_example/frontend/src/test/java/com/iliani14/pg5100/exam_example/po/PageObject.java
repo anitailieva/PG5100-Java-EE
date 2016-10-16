@@ -30,7 +30,6 @@ public abstract class PageObject {
         element.clear();
         element.sendKeys(text);
     }
-
     protected Boolean waitForPageToLoad() {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         WebDriverWait wait = new WebDriverWait(driver, 10); //give up after 10 seconds
@@ -54,9 +53,6 @@ public abstract class PageObject {
             waitForPageToLoad();
         }
     }
-
-
-
     public boolean isLoggedIn(){
         List<WebElement> logout = driver.findElements(By.id("logoutForm:logout"));
         return !logout.isEmpty();
