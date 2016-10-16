@@ -6,7 +6,7 @@ import com.iliani14.pg5100.exam_example.entity.Event;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
-import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
@@ -43,7 +43,7 @@ public class EventController implements Serializable {
         List<Event> events;
 
 
-        if (! loggingController.isLoggedIn() || ! showOnlyOwnCountry) {
+        if (!loggingController.isLoggedIn() || !showOnlyOwnCountry) {
             events = eventEJB.getAllEvents();
         } else {
             events = eventEJB.getEvents(loggingController.getCountry());
