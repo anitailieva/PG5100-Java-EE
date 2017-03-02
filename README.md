@@ -1,3 +1,3 @@
-## PG5100 - Java EE 
+## Java EE 
 
-Code for PG5100, Autumn 2016
+Exercise project, Autumn 2016
